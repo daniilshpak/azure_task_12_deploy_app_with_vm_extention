@@ -41,10 +41,9 @@ New-AzVm `
 
 # ↓↓↓ Write your code here ↓↓↓
 $extensionSettings = @{
-    fileUris = @("https://raw.githubusercontent.com/daniilshpak/azure_task_12_deploy_app_with_vm_extention/refs/heads/develop/install-app.sh")
+    fileUris = @("https://raw.githubusercontent.com/daniilshpak/azure_task_12_deploy_app_with_vm_extention/develop/install-app.sh")
     commandToExecute = "bash install-app.sh"
 }
-
 Set-AzVMExtension `
     -ResourceGroupName $resourceGroupName `
     -VMName $vmName `
